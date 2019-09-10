@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:hint="请设置多长时间背一次单词(分钟)；默认为10分钟"
+        android:id="@+id/input_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="22sp"
+        android:layout_marginBottom="-10sp" />
+    <Button
+        android:onClick="startservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="启动服务"
+        android:textSize="20dp"
+        android:layout_marginTop="22sp"/>
+    <Button
+        android:onClick="closeservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭服务"
+        android:textSize="20dp"
+        android:layout_marginTop="22sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="申请权限"
+        android:textSize="20dp"
+        android:onClick="getpower"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检查更新"
+        android:onClick="checkupdata"
+        android:layout_marginBottom="5sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/version"
+        android:gravity="center"/>
+
+
+
+
+</LinearLayout>
