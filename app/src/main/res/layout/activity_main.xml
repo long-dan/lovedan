@@ -18,37 +18,48 @@
         android:onClick="startservice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="启动服务"
+        android:text="开始吧！"
         android:textSize="20dp"
         android:layout_marginTop="22sp"/>
     <Button
         android:onClick="closeservice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="关闭服务"
+        android:text="狠心停止！"
         android:textSize="20dp"
         android:layout_marginTop="22sp"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="申请权限"
-        android:textSize="20dp"
-        android:onClick="getpower"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="检查更新"
-        android:onClick="checkupdata"
-        android:layout_marginBottom="5sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:id="@+id/version"
-        android:gravity="center"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="申请弹窗权限"
+            android:onClick="getpower"
+            android:layout_marginBottom="80sp"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="检查更新"
+            android:onClick="checkupdata"
+            android:layout_marginBottom="40sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/version"
+            android:gravity="center"/>
+    </RelativeLayout>
 
 
 
